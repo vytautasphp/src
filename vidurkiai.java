@@ -1,7 +1,7 @@
 public class vidurkiai {
 
     public static void main(String[] args) {
-        int[]a = {5,6,10,15,8,8};
+        int[]a = {5,6,10,15,8,4};
         int[]b = {8,5,3};
         double suma = 0;
         double sumab = 0;
@@ -16,7 +16,7 @@ public class vidurkiai {
         }
         vidurkisa = suma/a.length;
         vidurkisb = sumab/b.length;
-        System.out.println(vidurkisa+" "+vidurkisb);
+        System.out.println("Vidurkių skirtumas yra: "+(vidurkisa-vidurkisb));
 
     }
 
