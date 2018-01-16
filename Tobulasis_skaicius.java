@@ -16,7 +16,6 @@ public class Tobulasis_skaicius {
                 }
 
             }
-
             if (d == a) {
                 System.out.println("tobulasis skaičius: " + d);
             }
