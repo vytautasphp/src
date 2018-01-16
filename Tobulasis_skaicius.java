@@ -3,7 +3,7 @@ public class Tobulasis_skaicius {
 
         double a;
         double b = 1000;
-        double c = 0;
+        double c;
         double d = 0;
 
         for (a=1; a<=b ;a++) {
@@ -14,14 +14,11 @@ public class Tobulasis_skaicius {
                         d = d + c;
                     }
                 }
-
             }
             if (d == a) {
                 System.out.println("tobulasis skaičius: " + d);
             }
             d=0;
         }
-
     }
-
 }
