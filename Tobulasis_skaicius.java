@@ -6,8 +6,6 @@ public class Tobulasis_skaicius {
         double c = 0;
         double d = 0;
 
-
-
         for (a=1; a<=b ;a++) {
             for (int i = 1; i <= a; i++) {
                 if (a % i == 0) {
