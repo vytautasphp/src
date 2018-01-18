@@ -14,17 +14,14 @@ public class Main {
                 new Mokinys("Antanas", "Antanaitis", 9,new int[]{9,8,7}),
                 new Mokinys("Antanas", "Antanaitis", 7,new int[]{10,9,10})};
 
-        //for (Mokinys m : mokiniai) {
-        //    System.out.println(m.vardas + ' ' + m.pavarde + ' ' + m.klase);
-       // }
-        // System.out.println(mokiniai[0].klase);
+
 
         Mokinys[] x = new Mokinys[1];
         int ilgis = mokiniai.length;
 
         for (int m = 0; m < ilgis; m++) {
             for (int i = 0, n = 1; n < mokiniai.length; i++, n++) {
-                if (mokiniai[i].getKlase() > mokiniai[n].getKlase()) {
+                if (mokiniai[i].getVidurkis() > mokiniai[n].getVidurkis()) {
                     x[0] = mokiniai[i];
                     mokiniai[i] = mokiniai[n];
                     mokiniai[n] = x[0];
