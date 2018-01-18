@@ -2,11 +2,24 @@ package rusiavimas;
 
 public class Zmogus {
 
-    String vardas;
+   private String vardas;
+   private String pavarde;
 
-    String pavarde;
+    public String getVardas() {
+        return vardas;
+    }
 
+    public String getPavarde() {
+        return pavarde;
+    }
 
+    public void setPavarde(String pavarde) {
+        this.pavarde = pavarde;
+    }
+
+    public void setVardas(String vardas) {
+        this.vardas = vardas;
+    }
 
     Zmogus(String vardas, String pavarde) {
         this.vardas = vardas;
@@ -16,4 +29,6 @@ public class Zmogus {
         this.vardas = vardas;
 
     }
+
+
 }

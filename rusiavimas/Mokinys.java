@@ -2,25 +2,38 @@ package rusiavimas;
 
 public class Mokinys extends Zmogus {
 
-    int klase; // pvz 6 ar 9
-    int[] trimestras; // masyvas mokinio trimestro pažymių
+   private int klase; // pvz 6 ar 9
+   private int[] trimestras; // masyvas mokinio trimestro pažymių
 
-    Mokinys(String vardas, String pavarde, int klase) {
-        super(vardas, pavarde);
+    public int getKlase() {
+        return klase;
+    }
+
+    public void setKlase(int klase) {
         this.klase = klase;
     }
+
+    public int[] getTrimestras() {
+        return trimestras;
+    }
+
     Mokinys(String vardas, String pavarde, int klase, int[] trimestras) {
-        this(vardas, pavarde, klase);
-        this.trimestras = trimestras;
-    }
-    public static int rus(int mok,int mok2) {
-        if (mok>mok2){
-            return mok;
-        }
-        else {
-            return mok2;
-        }
+       super(vardas, pavarde);
+       this.klase = klase;
+       this.trimestras = trimestras;
 
     }
+    //vidurkio skaiciavimas//
+    public double getVidurkis(){
+        double suma = 0;
+        double vidurkis;
+        double vidurkisr;
 
+        for (int i=0;i<getTrimestras().length;i++) {
+            suma += getTrimestras()[i];
+        }
+        vidurkisr = suma / getTrimestras().length;
+        vidurkis = Math.round(vidurkisr);
+        return vidurkis;
+    }
 }
