@@ -2,17 +2,11 @@ package pratimas07;
 
 public class Mokinys extends Zmogus {
 
-    public static int[] kl = new int[12];
+    private static int[] kl = new int[12];
     private int klase; // pvz 6 ar 9
     private int[] trimestras; // masyvas mokinio trimestro pažymių
 
-    public int getKlase() {
-        return klase;
-    }
 
-    private int[] getTrimestras() {
-        return trimestras;
-    }
 
     Mokinys(String vardas, String pavarde, int klase, int[] trimestras) {
         super(vardas, pavarde);
@@ -23,6 +17,16 @@ public class Mokinys extends Zmogus {
         kl[kint]++;
     }
 
+    public static int[] getKl() {
+        return kl;
+    }
+
+    public int getKlase() {
+        return klase;
+    }
+    private int[] getTrimestras() {
+        return trimestras;
+    }
     //vidurkio skaiciavimas//
     public double getVidurkis() {
         double suma = 0;

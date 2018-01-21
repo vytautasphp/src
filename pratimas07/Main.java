@@ -40,9 +40,9 @@ public class Main {
         for (Mokinys m : mokiniai) {
             System.out.println(m.getVardas() + ' ' + m.getPavarde() + ' ' + m.getKlase()+ ' ' + "Vidurkis: " + m.getVidurkis());
         }
-        for (int i=0;i<Mokinys.kl.length;i++) {
-           if (Mokinys.kl[i]>0) {
-               System.out.println("klasėje " + (i + 1) + ": " + Mokinys.kl[i] + " mokinių");
+        for (int i=0;i<Mokinys.getKl().length;i++) {
+           if (Mokinys.getKl()[i]>0) {
+               System.out.println("klasėje " + (i + 1) + ": " + Mokinys.getKl()[i] + " mokinių");
            }
         }
     }
