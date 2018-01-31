@@ -10,14 +10,14 @@ public class Main {
         List<Automobilis> list = new ArrayList<>();
 
 
-        list.add(new Automobilis("Honda", "ASE938", "Antanas Antanaitis"));
-        list.add(new Automobilis("BMW", "JKL588", "Jonas Jonaitis"));
-        list.add(new Automobilis("Opel", "CNM713", "Petras Petraitis"));
-        list.add(new Automobilis("Mercedes", "DTM558", "Ona Onaitiene"));
-        list.add(new Automobilis("Audi", "ZST567", "Janina Janaitiene"));
-        list.add(new Automobilis("ZAZ", "SDA456", "Juozas Juoazaitis"));
-        list.add(new Automobilis("ZAZ", "ABC548", "Juozas Juoazaitis"));
-        list.add(new Automobilis("ZAZ", "ABC548", "Antanas Juoazaitis"));
+        list.add(new Automobilis("Honda", "ASE938", "Zigmantas", "Antanaitis"));
+        list.add(new Automobilis("BMW", "JKL588", "Jonas","Jonaitis"));
+        list.add(new Automobilis("Opel", "CNM713", "Petras","Petraitis"));
+        list.add(new Automobilis("Mercedes", "DTM558", "Ona","Onaitiene"));
+        list.add(new Automobilis("Audi", "ZST567", "Janina","Janaitiene"));
+        list.add(new Automobilis("ZAZ", "SDA456", "Juozas","Juoazaitis"));
+        list.add(new Automobilis("ZAZ", "ABC548", "Juozas","Juoazaitis"));
+        list.add(new Automobilis("ZAZ", "ABC548", "Antanas","Juoazaitis"));
 
 
             for (Automobilis automobilis : list) {
