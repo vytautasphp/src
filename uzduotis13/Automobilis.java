@@ -3,10 +3,10 @@ package uzduotis13;
 public class Automobilis implements Comparable<Automobilis>{
 
 
-String numeris;
-String marke;
-String vardas;
-String pavarde;
+    private String numeris;
+    private String marke;
+    private String vardas;
+    private String pavarde;
 
     public Automobilis(String marke, String numeris, String vardas, String pavarde) {
         this.marke = marke;
