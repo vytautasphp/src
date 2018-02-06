@@ -13,7 +13,8 @@ public class Main {
         list.add(new Employee("Juozas"));
 
 
-        list.sort((e1, e2) -> e1.compareTo(e2));
+        list.sort(Employee::compareTo);
+       // list.sort((e1, e2) -> e1.compareTo(e2));
 
         for (Employee employee : list) {
             System.out.println(employee);
