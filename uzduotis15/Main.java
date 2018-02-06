@@ -19,5 +19,6 @@ public class Main {
         for (Employee employee : list) {
             System.out.println(employee);
         }
+
     }
 }
